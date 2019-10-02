@@ -1,0 +1,158 @@
+*{
+	box-sizing: border-box; 
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	font-family: sans-serif;
+}
+
+/*IMAGES*/
+
+.logosmallIMG{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+/*FORMATTING*/
+
+.container{
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 10%;
+	padding-top: 10%;
+}
+
+/*SIDEBAR*/
+
+.sidebar{
+	height: 100%;
+ 	width: 0;
+	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	background-color: #48699b;
+  	overflow-x: hidden;
+  	transition: 0.5s;
+  	padding-top: 80px;
+}
+
+.sidebar p{
+	transition: 0.3s;
+	display: block;
+	color: white;
+	padding-top: 60px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 40px;
+}
+
+.sidebar .closeBtn{
+	position: absolute;
+	right: 25px;
+	font-size: 80px;
+	margin-left: 150px;
+	top: 30px;
+	color: white;
+}
+
+.border_right{
+	border-right: 1px solid #ccc !important;
+}
+
+.openSidebar{
+	display: inline-block;
+	padding: 8px 16px;
+	text-align: center;
+	font-size: 100px;
+	color: white;
+	background-color: #749ad0;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 60px;
+	position:fixed;
+	top: 0px;
+}
+
+.hamburger{
+  	width: 40px;
+  	height: 5px;
+  	background-color: white;
+  	margin: 6px 0;
+}
+
+.hamburgerStyle{
+	float: left;
+	padding-top: 7px;
+}
+
+/*Animated sidebar created with help from W3Schools: How to - Side Navigation */
+
+/*TYPE*/
+
+h1{
+	font-family: 'YesevaOne-Regular', serif;
+	text-align: left;
+	font-size: 100px;
+}
+
+h2{
+	font-family: 'Gotham-Bold', sans-serif;
+	text-align: center;
+	font-size: 45px;
+	margin: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	font-family: 'Gotham-Light', sans-serif;
+	text-align: center;
+	font-size: 16px;
+	margin: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 100px;
+}
+
+i{
+	font-family: 'Gotham-Light', sans-serif;
+	text-align: left;
+	font-style: normal;
+	font-size: 15px;
+	display: block;
+	padding-top: 1vh;
+}
+
+/*FONTS*/
+
+@font-face{
+  	font-family: 'YesevaOne-Regular';
+	src: url('YesevaOne-Regular.ttf');
+  	font-weight: normal;
+}
+@font-face{
+  	font-family: 'Gotham-Bold';
+  	src: url('Gotham-Bold.otf');
+  	font-weight: normal;
+}
+
+@font-face{
+  	font-family: 'Gotham-Light';
+  	src: url('Gotham-Light.otf');
+  	font-weight: normal;
+}
