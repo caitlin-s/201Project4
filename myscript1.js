@@ -14,7 +14,7 @@ let foundSomething = false;
 for (var i = 0; i < mydata.length; i++){
     var x = document.getElementById("instaSelect").selectedIndex;
     var y = document.getElementById("instaSelect").options;
-    var option = y[x].text;
+    var option = y[x].value;
 
     if(option == "numberPosts"){
         var searchBy = numberPosts;
