@@ -3,68 +3,49 @@
 <html>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Physical Traces About</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Digital Passport</title>
+    <script type="text/javascript" src="myscript1.js"></script>
+  <script type="text/javascript" src="instaSmall.json"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
 <body>
 
-<!-- Sidebar Content -->
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closeBtn" onclick="sidebar_close()"> &times; 
-  </a>
-
-  <a  href="index.html"> 
-    <p class="bar_item sidebarButton">Home</p> 
-  </a>
-
-  <a href="page1.html"> 
-    <p class="bar_item sidebarButton">About</p> 
-  </a>
-
-  <a href="page2.html"> 
-    <p class="bar_item sidebarButton">Your Digital Traces</p>
-  </a>
-
-  <a href="page3.html"> 
-    <p class="bar_item sidebarButton">History</p>
-  </a>
-
-  <a href="page4.html"> 
-    <p class="bar_item sidebarButton">View Traces Around You</p>
-  </a>
-</div>
-
 <!-- Nav Bar -->
-<btn class="openSidebar">
-  <div class="hamburgerStyle">
-    <div class="hamburger" onclick="sidebar_open()"> </div>
-    <div class="hamburger" onclick="sidebar_open()"> </div>
-    <div class="hamburger" onclick="sidebar_open()"> </div>
-  </div>
+<div class="navBar">
   <h2 style= "padding-right: 50px"> Digital Passport </h2>
-</btn>
-
-<!-- App Contents -->
-<div class="container">
-  <img class="logosmallIMG" src="img/logo_small.png">
-  <img class="logosmallIMG" src="img/instagram.png">
-  <h2> Instagram </h2>
-  <p>
-    Physical Traces is an app designed to help everyday people understand that their personal data is tracked online nearly every time they visit a website or app.
-  </p>
-  <p>
-    Many people don't understand that almost everything they do on the internet is observed, recorded then sold to other companies which can be used in manipulative and targeted advertising. This means that companies have access to anything you post online and we should be careful of how much personal information we share.
-  </p>
 </div>
 
-<script>
-function sidebar_open() {
-  document.getElementById("mySidebar").style.width = "350px";
-}
+<!-- Search Bar -->
+<div class="container">
+  <!-- Logo -->
+  <img class="imgSmall" src="img/instagram.png">
+  <!-- Description -->
+  <p> Search a section of an extensive Instagram dataset containing real information from hundreds of users.</p>
+  <div class="whiteBackg"> 
+    <!-- Search Bar -->
+    <input type="text" id="myText" value="">
 
-function sidebar_close() {
-  document.getElementById("mySidebar").style.width = "0";
-}
-</script>
+    <div class="floatContainer">
+      <div class="dropdown">
+        <select id="instaSelect">
+           <option>numberPosts</option>
+           <option>username</option>
+           <option>numberFollowers</option>
+           <option>descriptionProfile</option>
+           <option>tags</option>
+        </select>
+      </div>
+      <!-- Search Button -->
+      <button class="searchBtn" onclick="myFunction()">Search</button>
+    </div>
+  </div>
+  <!-- Scraped Data -->
+  <div id="box"> </div>
+</div>
+
+
+</body>
